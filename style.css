@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: mono;
+    background-color: var(--white);
+}
+
+:root {
+    --white: #f5f5f5;
+}
+
+@font-face {
+    font-family: mono;
+    src: url(./assets/Manrope-VariableFont_wght.woff2);
+}
+
+header {
+    height: 7.5%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header-left {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.header-left #image {
+    height: 100%;
+    width: 2.7rem;
+    background-image: url(https://ik.imagekit.io/sheryians/dark-logo_TwETv_UJBX.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-left h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right p {
+    font-size: 1.2em;
+}
+
+@media (min-width: 800px) {
+    header {
+        padding: 1rem 5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        padding: 4.5rem 5rem;
+    }
+
+    .header-left #image {
+        height: 4rem;
+        width: 4.5rem;
+    }
+
+    .header-left h2 {
+        font-size: 1.7em;
+        line-height: 1;
+        font-weight: 400;
+    }
+
+    .header-right p {
+        font-size: 1.5em;
+    }
+}
+
+main {
+    width: 100%;
+}
+
+.section1 {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.join-btn {
+    padding: 0.35rem 0.9rem;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-btn h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.section1 h1 {
+    line-height: 1;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+
+.section1 h1 span {
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+.section1 p {
+    width: 82%;
+    font-size: small;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.btn-container {
+    height: 10vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.btn-container .btn {
+    height: 100%;
+    background-color: black;
+    color: var(--white);
+    border-radius: 30px;
+    border: none;
+    font-size: 0.75em;
+}
+
+@media (min-width: 640px) {
+    .section1 {
+        height: 45vh;
+        gap: 1.4rem;
+        justify-content: flex-end;
+    }
+
+    .section1 h1 {
+        line-height: 1;
+        text-align: center;
+        font-weight: 300;
+        font-size: 4.5em;
+    }
+
+    .section1 h1 span {
+        font-size: 1.3em;
+        font-weight: 800;
+    }
+
+    .section1 p {
+        font-size: large;
+    }
+
+    .btn-container {
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.8em;
+    }
+
+    .btn-container .btn {
+        height: 100%;
+        width: 30%;
+    }
+}
